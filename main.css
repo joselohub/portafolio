@@ -1,0 +1,21 @@
+body{
+    margin: 0 auto;
+    font-family: sans-serif;
+    background-color: rgb(44, 41, 41);
+    color:aliceblue
+   
+}
+h1{
+    text-align: center;
+}
+
+.list,h3{
+    padding: 20px  ;
+    border-radius: 5px;
+    list-style-type: none;
+    background-color: rgb(57, 57, 57);
+}
+.link{
+    text-decoration: none;
+    color:rgb(107, 189, 255)
+}
