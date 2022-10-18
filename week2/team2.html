@@ -4,13 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/portafolio/main.css">
     <title>team </title>
 </head>
 <body>
+  <h2>Week 2</h2>
+  <h3>Notes:</h3>
+  <p>this week we start to work as a team ,We had our first meeting</p>
+  <h3>Exercises:</h3>
+  <div>
+    <h4>Sum all the numbers up to the number provided</h4>
     <input type="text" id="numsIn">
     <button id="button" onclick="numOut()">sum</button>
-    <div id="showTheSum"></div>
-
+    <div id="showTheSum"></div><br>
+  </div>
+  <div>
+    <h4>Adding Machine</h4>
+    <input id="inputThree" type="text">
+    <input id="inputThree2" type="text">
+    <button id="btn" onclick="addNumbers()">add</button>
+    <div id="outputThree" ></div>
+  </div>
     <script>
         function numOut() {
         const input = document.getElementById('numsIn').value;
@@ -27,7 +41,20 @@
         }
         return total;
       }
+      
+      function addNumbers(){
+        const inputThree = document.getElementById('inputThree').value;
+        const inputThree2 = document.getElementById('inputThree2').value;
+        const outputThree = document.getElementById('outputThree');
 
+        const num1Int = parseInt(inputThree);
+        const num2Int = parseInt(inputThree2);
+        
+        if((num1Int !== NaN) & (num2Int !==NaN)){
+          const total = num1Int + num2Int;
+          outputThree.innerHTML = 'the sum total is: '+ total;
+        }
+      }
     </script>
 </body>
 </html>

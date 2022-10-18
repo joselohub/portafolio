@@ -1,5 +1,5 @@
 body{
-    margin: 0 auto;
+    margin: 0px  10px 0px 10px;
     font-family: sans-serif;
     background-color: rgb(44, 41, 41);
     color:aliceblue
@@ -9,7 +9,8 @@ h1{
     text-align: center;
 }
 
-.list,h3{
+.list,p,.cardio{
+    
     padding: 20px  ;
     border-radius: 5px;
     list-style-type: none;
