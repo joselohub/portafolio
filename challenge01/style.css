@@ -1,0 +1,46 @@
+*{
+
+   box-sizing: border-box; 
+   margin:0;
+   padding: 0;
+}
+
+.container{
+    width: 300px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+/*add task*/
+.add-task{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.add-task input{
+    width: 100%;
+    padding: 5px;
+}
+
+.add-task i:hover {
+    
+    cursor: pointer;
+}
+/* task section */
+
+.section-task li{
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    background-color: rgb(194, 194, 194);
+    border-radius: 9px;
+    justify-content: space-between;
+    margin-bottom: 3px;
+}
+.lineThrough{
+    text-decoration: line-through;
+} 
+.fa-remove{
+    cursor: pointer;
+}
