@@ -29,7 +29,7 @@
 }
 /* task section */
 
-.section-task li{
+.task-section li{
     display: flex;
     align-items: center;
     padding: 4px;
@@ -38,7 +38,7 @@
     justify-content: space-between;
     margin-bottom: 3px;
 }
-.lineThrough{
+.line-through{
     text-decoration: line-through;
 } 
 .fa-remove{
