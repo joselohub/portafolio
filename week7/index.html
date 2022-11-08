@@ -5,9 +5,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../main.css">
+    <script defer src="script.js"></script>
     <title>team </title>
 </head>
 <body>
+
+    <style>
+        body{
+            text-align:center;
+        }
+    </style>
+    <section>
+        <h2>call method</h2>
+        <p>call() method takes the arguments separated by comma while  <br> examples: </p>
+       
+		<button onClick="funClick()">
+			click
+		</button>
+		
+		<p id="mCall"></p>
+
+    </section>
+    <section>
+        <h2>apply method</h2>
+        <p> apply() method takes the array of arguments</p>
     
+
+        <button onClick="funClick2()">
+            click
+        </button>
+         
+        <p id="mCall2"></p>
+ 
+        
+    </section>
+    <section>
+        <h2> Immediately Invoked Function Expressions or IIFEs </h2>
+        
+        <p id="IIFE">there are Functions that are executed as soon as they are mounted, these functions are known as Immediately Invoked Function Expressions or IIFEs. </p>
+
+    </section>
+    <section>
+        <h2>Functions that Define and Rewrite Themselves</h2>
+        <img src="imgRewrite.png" alt="rewrite">
+
+    </section>
+    <section>
+        <h2>Recursive function</h2>
+        <img src="recursive.png" alt="recursive">
+    
+    </section>
+    <section>
+        <h2>callbacks</h2>
+        <img src="callback.png" alt="callback-e">
+    </section>
+    <section>
+        <h2>Closures</h2>
+        <img src="closures.png" alt="">
+    </section>
+    <section>
+        <h2>Quiz</h2>
+    <ol class="list" >
+        <li><a class="link" href="quiz/quiz.html">Quiz</a></li>
+    </ol>
+    </section>
+    <section>
+        <h2>fetch API</h2>
+        <img src="fetch0.png" alt="first-fetch">
+        <img src="fetch.png" alt="second-fetch">
+
+        <h2>example:</h2>
+
+        <div class="container my-5 text-center">
+            <button class="btn btn-danger w-100" onclick="traer()">Obtener</button>
+            <div class="mt-5" id="contenido">
+                
+            </div>
+        </div>
+    
+        <script>
+            var contenido = document.querySelector('#contenido')
+            function traer() {
+                fetch('https://randomuser.me/api/')
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data.results['0'])
+                    contenido.innerHTML = `
+                    <img src="${data.results['0'].picture.large}" width="100px" class="img-fluid rounded-circle"> 
+                    <p>Nombre: ${data.results['0'].name.last}</p>
+                    `
+                })
+            } 
+        </script>
+    
+    </section>
+    <section>
+        <ol class="list">
+            <li><a class="link" href="teamwork/">Teamwork</a></li>
+        </ol>
+    </section>
+
 </body>
 </html>
