@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Week 10 </title>
+</head>
+<body>
+    <h1>Week 10</h1>
+      <section>
+        <h2>Validating Forms</h2>
+        <p>Form validation is a “technical process where a web-form checks if the information provided by a user is correct.” The form will either alert the user that they messed up and need to fix something to proceed, or the form will be validated and the user will be able to continue with their registration process.</p>
+        <h3>Types of client-side validation</h3>
+        <p> <strong>Built-in form validation</strong> this type Uses HTML form validation features, Built-in form validation has better performance than JavaScript, but it is not as customizable as JavaScript validation.</p>
+        <p><strong>JavaScript</strong>this type is coded using JavaScript. </p><br>
+      </section>
+      <section class="sec-body">
+        <form class="form-body" novalidate>
+          <p> 
+            <label for="mail">
+              <span>Please enter an email address:</span>
+              <input type="email" id="mail" name="mail" required minlength="8" />
+              <span class="error" aria-live="polite"></span>
+            </label>
+          </p>
+          <button>Submit</button>
+        </form>
+      </section>
+      <section>
+        <h2>only enter values which are less than 10</h2>
+        <input type="number" id="input" max="10">
+        <button type="submit" onclick="validate()">Validate</button>
+        <p id="result"></p>
+      </section>
+      <section>
+        <h2>usinf fetch API</h2>
+        <p>Fetch method is used to request data from a server. The request can be of any type of API that return the data in JSON. The fetch method requires one parameter, the URL to request, and returns a promise.</p>
+        <form id="form" method="PUT">
+          <input type="text" id="userId" placeholder="userId">
+          <input type="text" id="body" placeholder="Body">
+          <input type="submit"  value="Add Todo">
+        </form>
+        <div id="result"></div>
+      </section>
+</body>
+</html>
