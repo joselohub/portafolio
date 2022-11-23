@@ -2,7 +2,7 @@ import { getLocation } from './utilities.js';
 import Quake from './Quake.js';
 import QuakesView from './QuakesView.js';
 
-// Quake controller
+
 export default class QuakesController {
   constructor(parent, position = null) {
     this.parent = parent;
